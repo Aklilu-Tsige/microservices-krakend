@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   krakend:
-    image: devopsfaith/krakend
+    build: ./krakend
     container_name: krakend
     ports:
       - "8080:8080"
     volumes:
-      - ./krakend.json:/etc/krakend/krakend.json
+      - ./krakend/krakend.json:/etc/krakend/krakend.json
 
   micro1:
     build: ./micro1
@@ -15,6 +15,8 @@ services:
     ports:
       - "8081:8081"
     command: ["npm", "start"]
+    env_file:
+      - ./micro1/.env
 
   micro2:
     build: ./micro2
@@ -22,6 +24,8 @@ services:
     ports:
       - "8082:8082"
     command: ["npm", "start"]
+    env_file:
+      - ./micro2/.env
 
   micro3:
     build: ./micro3
@@ -29,6 +33,8 @@ services:
     ports:
       - "8083:8083"
     command: ["npm", "start"]
+    env_file:
+      - ./micro3/.env
 
   micro4:
     build: ./micro4
@@ -36,3 +42,5 @@ services:
     ports:
       - "8084:8084"
     command: ["npm", "start"]
+    env_file:
+      - ./micro4/.env

@@ -1,0 +1,268 @@
+{
+  "version": 3,
+  "timeout": "3000ms",
+  "cache_ttl": "300s",
+  "name": "Krakend",
+  "endpoints": [
+    {
+      "endpoint": "/micro1/api/userAccounts",
+      "method": "POST",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro1:8081"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro1/api/userAccounts",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro1:8081"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro1/api/userAccounts/{id}",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro1:8081"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro1/api/userAccounts/{id}",
+      "method": "PUT",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro1:8081"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro1/api/userAccounts/{id}",
+      "method": "DELETE",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro1:8081"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro2/api/userAccounts",
+      "method": "POST",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro2:8082"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro2/api/userAccounts",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro2:8082"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro2/api/userAccounts/{id}",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro2:8082"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro2/api/userAccounts/{id}",
+      "method": "PUT",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro2:8082"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro2/api/userAccounts/{id}",
+      "method": "DELETE",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro2:8082"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro3/api/userAccounts",
+      "method": "POST",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro3:8083"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro3/api/userAccounts",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro3:8083"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro3/api/userAccounts/{id}",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro3:8083"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro3/api/userAccounts/{id}",
+      "method": "PUT",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro3:8083"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro3/api/userAccounts/{id}",
+      "method": "DELETE",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro3:8083"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro4/api/userAccounts",
+      "method": "POST",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro4:8084"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro4/api/userAccounts",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro4:8084"
+          ],
+          "url_pattern": "/api/userAccounts"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro4/api/userAccounts/{id}",
+      "method": "GET",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro4:8084"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro4/api/userAccounts/{id}",
+      "method": "PUT",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro4:8084"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    },
+    {
+      "endpoint": "/micro4/api/userAccounts/{id}",
+      "method": "DELETE",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "host": [
+            "http://micro4:8084"
+          ],
+          "url_pattern": "/api/userAccounts/{id}"
+        }
+      ]
+    }
+  ]
+}
